@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MRT EDITS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #4facfe, #00f2fe, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientMove 20s ease infinite;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .header-buttons a {
+      background-color: #fff;
+      color: #000;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      transform: scale(1.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .card-price {
+      margin: 8px 0;
+      color: green;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📷 MRT EDITS</h1>
+    <div class="header-buttons">
+      <a href="https://instagram.com/your_username" target="_blank">📸 Instagram</a>
+      <a href="https://wa.me/94767565830?text=Hi!%20I'm%20interested%20in%20your%20photo%20edits" target="_blank">💬
+        WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="grid">
+
+    <!-- Repeat cards for your edits -->
+    <div class="card">
+      <img src="Image/logo.jpg" alt="">
+      <div class="card-body">
+        <div class="card-title">LOGO Portrait Glow</div>
+        <div class="card-price">LKR 200</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Portrait Glow" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Image/mrt.jpg" alt="">
+      <div class="card-body">
+        <div class="card-title">USE 1 PHOTO Moody Light</div>
+        <div class="card-price">LKR 300</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Moody Light" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Image/rcl.jpg" alt="Cyber Blue">
+      <div class="card-body">
+        <div class="card-title">USE 3 PHOTOS Cyber Blue</div>
+        <div class="card-price">LKR 500</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Cyber Blue" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Image/comingsoon.webp" alt="">
+      <div class="card-body">
+        <div class="card-title">Light & Pop</div>
+        <div class="card-price">LKR 999</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Light & Pop" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="edit5.jpg" alt="Studio Mood">
+      <div class="card-body">
+        <div class="card-title">Studio Mood</div>
+        <div class="card-price">LKR 999</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Studio Mood" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="edit6.jpg" alt="HDR Focus">
+      <div class="card-body">
+        <div class="card-title">HDR Focus</div>
+        <div class="card-price">LKR 400</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in HDR Focus" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="edit7.jpg" alt="Dark Frame">
+      <div class="card-body">
+        <div class="card-title">Dark Frame</div>
+        <div class="card-price">LKR 500</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Dark Frame" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="edit8.jpg" alt="Rain FX">
+      <div class="card-body">
+        <div class="card-title">Rain FX</div>
+        <div class="card-price">LKR 550</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Rain FX" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="edit9.jpg" alt="Vibe Effect">
+      <div class="card-body">
+        <div class="card-title">Vibe Effect</div>
+        <div class="card-price">LKR 650</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Vibe Effect" target="_blank">Buy
+          Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="edit10.jpg" alt="Cinematic Edge">
+      <div class="card-body">
+        <div class="card-title">Cinematic Edge</div>
+        <div class="card-price">LKR 750</div>
+        <a class="buy-btn" href="https://wa.me/94767565830?text=Hi! I'm interested in Cinematic Edge"
+          target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 MRT Edits | Designed by Me 💎
+  </footer>
+
